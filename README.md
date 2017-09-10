@@ -26,15 +26,15 @@ To make a copy of this repository issue the following command:
 
 ## Contributing
 
-Please read [CONTRIBUTING.md]( https://github.com/Achraf-Ben/Programming/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/Achraf-Ben/Programming/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
-* **Achraf ben Abdelkrim** - *All work* - [Achraf-Ben](https://github.com/Achraf-Ben)
+* **Achraf ben Abdelkrim** - [Achraf-Ben](https://github.com/Achraf-Ben)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Achraf-Ben/Programming/blob/master/LICENSE.md) file for details
 
 ## Acknowledgments
 
