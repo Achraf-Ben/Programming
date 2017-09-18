@@ -1,9 +1,7 @@
 lijst = ['a','b','c']
 
 def wijzig(x):
-    x.remove('a')
-    x.remove('b')
-    x.remove('c')
+    x.clear()
     x.append('d')
     x.append('e')
     x.append('f')

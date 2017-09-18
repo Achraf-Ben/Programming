@@ -1,9 +1,10 @@
 import math
 
-def kwadraten_som():
-    grondgetallen = [4,5,3,-81]
+def kwadraten_som(grondgetallen):
+    uitkomst = 0;
     for getal in grondgetallen:
-        if getal >= 0:
-            sqrt(getal)
-            print(getal)
-# Niet af
+        if (getal >= 0):
+            uitkomst = uitkomst + getal*getal
+    return uitkomst
+
+print(kwadraten_som([4, 5, 3, -81]))

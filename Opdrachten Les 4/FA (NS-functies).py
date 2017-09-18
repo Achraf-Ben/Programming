@@ -29,4 +29,4 @@ def ritprijs(leeftijd, weekendrit, afstandKM): #return waarde is definitieve pri
         print('Normaaltarief:')
         print(tarief) # print standaardtarief
 
-ritprijs(63,1,10)
+ritprijs(64,0,-10)
