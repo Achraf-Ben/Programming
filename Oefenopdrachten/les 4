@@ -1,0 +1,76 @@
+# Find and replace
+text = "abadacaead"
+result = text.replace("a", "b")
+print(result)
+
+# simple function
+def test_a_word(word):
+    if len(word) > 3:
+        return True
+    else:
+        return False
+
+print(test_a_word('Isditlang'))
+
+# Function stops at return, simple nested if's
+def test_a_word1(word):
+    if len(word) > 3:
+        for char in word:
+            if char == 'a':
+                return True
+            return False
+    else:
+        return False
+
+print(test_a_word1('I12373721a318g'))
+
+#Text find (Postive result if it found something, -1 if nothing is found.)
+text = 'mama'
+result = text.find("s")
+print(result)
+
+#Same as find, it returns the index
+text = 'mama'
+result = text.index("m")
+print(result)
+
+# Makes a list of all spaces in a list or use the sep
+text = 'ma ma, pa,  pa'
+result = text.split(',')
+print(result)
+
+# Strip
+text = 'mama'
+result = text.strip("a")
+print(result)
+
+# Seperator and end print arguments
+print('123', 'abc', 'ABC', sep='-')
+print('123', 'abc', 'ABC', sep=' ', end='\n')
+
+# Optional parameters
+def optional(text, replacement='nw text'):
+    return replacement
+
+print(optional('eerste', 'nieuwe waarde'))
+
+# Placeholders
+text = 'Dit stuk tekst heeft {} woorden en {} letters'.format(5,26)
+print(text)
+
+# Placeholders with numbering
+text = 'Dit stuk tekst heeft {1} woorden en {0} letters'.format(5,26)
+print(text)
+
+# Placeholder for 2 numbers after the decimal.
+text = 'Dit stuk tekst heeft {0:3} woorden en {1:1.2f} letters'.format(5321.12345,263213)
+print(text)
+
+# Open files
+bestand.read(12) # Reads the first 12 characters
+bestand.readline() #Leest per regel vanaf waar de cursus staat. (in dit geval 12 tot /n)
+bestand.read() # leest de rest vanaf de cursor
+bestand.readlines() #Per regel list item
+bestand.close() # close file at the end
+open(test.txt, 'w')
+bestand.write('T\n')
