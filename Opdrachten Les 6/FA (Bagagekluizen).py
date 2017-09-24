@@ -13,8 +13,6 @@ def toon_aantal_kluizen_vrij():
     aantalVrij = 12 - len(aantalBezet)
     kluizen.close()
     print("Er zijn nog {} kluizen vrij.".format(aantalVrij))
-    k = input("press close to exit")
-
 
 def nieuwe_kluis():
     'Removes used kluisnummer from list and lets the user choose a password for the first kluis in the remaining list'
@@ -79,6 +77,7 @@ def kluis_teruggeven():
         else:
             print('De ingevoerde combinatie is onjuist')
     k = input("Press a key to exit")
+
 menu()
 invoer = input("Wat wilt u doen? [1-4]: ")
 actie = int(invoer)
