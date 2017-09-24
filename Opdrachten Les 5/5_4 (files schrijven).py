@@ -1,6 +1,6 @@
 import datetime
 
-while True:
+while input:
     hardlopers = open("hardlopers.txt", "a")
     vandaag = datetime.datetime.today()
     s = vandaag.strftime("%a %d %b %Y, %H:%M:%S")
