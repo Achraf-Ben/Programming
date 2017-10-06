@@ -1,0 +1,13 @@
+cijfers = {
+    "Achraf" : 10,
+    "Vera" : 9,
+    "Job" : 8,
+    "Joel" : 7
+    }
+
+hoogsteCijfer = 0
+print(max(cijfers.values()))
+for cijfer in cijfers.values():
+        if cijfer >= hoogsteCijfer:
+            cijfer = hoogsteCijfer
+            print(cijfer)

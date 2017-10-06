@@ -1,12 +1,14 @@
 def inlezen_beginstation(stations):
-   invoer = input('Voer het beginstation in: ')
-   while True:
+    'Test'
+    invoer = input('Voer het beginstation in: ')
+    while True:
         if invoer in stations:
             return invoer
         else:
             invoer = input('Voer het beginstation in: ')
 
 def inlezen_eindstation(stations, beginstation):
+    'Test'
     invoer = input('Voer het eindstation in: ')
     while True:
         if invoer in stations:
@@ -16,6 +18,7 @@ def inlezen_eindstation(stations, beginstation):
             invoer = input('Voer het eindstation in: ')
 
 def omroepen_reis(stations, beginstation, eindstation):
+    'Test'
     beginStation = stations.index(beginstation)+ 1
     eindStation = stations.index(eindstation) + 1
     afstand = eindStation - beginStation
@@ -29,7 +32,7 @@ def omroepen_reis(stations, beginstation, eindstation):
 
 stations = ['Schagen', 'Heerhugowaard', 'Alkmaar', 'Castricum', 'Zaandam', 'Amsterdam Sloterdijk', 'Amsterdam Centraal',
             'Amsterdam  Amstel', 'Utrecht Centraal', '\'s-Hertogenbosch', 'Eindhoven', 'Weert', 'Roermond', 'Sittard', 'Maastricht']
+
 beginstation = inlezen_beginstation(stations)
 eindstation = inlezen_eindstation(stations, beginstation)
-
 omroepen_reis(stations, beginstation, eindstation)

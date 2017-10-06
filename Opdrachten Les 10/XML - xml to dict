@@ -1,0 +1,17 @@
+import xmltodict
+
+def processXML(filename):
+    with open(filename) as myXMLFile:
+        filecontentstring = myXMLFile.read()
+        xmldictionary = xmltodict.parse(filecontentstring)
+        return xmldictionary
+
+stationsdict = processXML('stations.xml')
+stations = stationsdict['stations']['station']
+
+for station in stations:
+    print(station['name'])
+
+for station in stations:
+    if station['name'] is not None:
+        print(station['name'])
