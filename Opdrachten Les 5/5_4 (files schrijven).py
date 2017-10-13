@@ -1,8 +1,12 @@
 import datetime
 
-while input:
-    hardlopers = open("hardlopers.txt", "a")
+hardlopers = open("hardlopers.txt", "a")
+
+while True:
     vandaag = datetime.datetime.today()
     s = vandaag.strftime("%a %d %b %Y, %H:%M:%S")
-    hardlopers.write(str(s) + ' '+ str(input('Type de naam van de hardloper: ') + '\n'))
-    hardlopers.close()
+    naam = str(input('Type de naam van de hardloper: '))
+    hardlopers.write(str(s) + ' '+ naam + '\n')
+    if naam == 'end':
+        break
+hardlopers.close()

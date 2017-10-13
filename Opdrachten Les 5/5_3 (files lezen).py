@@ -12,8 +12,8 @@ lineCount = 1
 
 kaartnummers = open("kaartnummers.txt", 'a')
 
-with open('kaartnummers.txt', 'r') as kaartnummers:
-    for line in kaartnummers:
+with open('kaartnummers.txt', 'r') as kaartnummers:    # Dit is hetzelfde als kaartnummers = open("kaartnummers.txt", 'a') en hiermee open je het bestand en noem je het kaartnummers
+    for line in kaartnummers:   #Dit loopje lees het bestand per regel en noemt het "line"
         nummers = int(line.split(',')[0])
         if nummers > maxNummer:
              maxNummer = nummers
