@@ -18,7 +18,6 @@ def nieuwe_kluis():
     'Removes used kluisnummer from list and lets the user choose a password for the first kluis in the remaining list'
     kluizen = open("kluizen.txt", 'r')
     listAvailable = [1,2,3,4,5,6,7,8,9,10,11,12]
-    listUsed = [1,2,3,4,5,6,7,8,9,10,11,12]
     empty = 0
 
     for regel in kluizen:
@@ -52,7 +51,7 @@ def kluis_openen():
     for regel in kluizen:
         regel = regel.rstrip()  # Verwijdert /n aan het einde van de regel
         kluisregel = regel.split(';')
-        if combinatie[0] == regel[0]:
+        if combinatie[0] == kluisregel[0] and combinatie[1] == kluisregel[1]:
             print("Uw kluis is geopend.")
         else:
             print('De ingevoerde ccombinatie is onjuist')
@@ -69,13 +68,16 @@ def kluis_teruggeven():
     regels = kluizen.readlines()
     kluizen.close()
 
-    kluizen = open("kluizen.txt", 'a')
+    kluizen = open("kluizen.txt", 'w')
     for regel in regels:
-        if regel == combinatie:
-            kluizen.write("Deleted")
-            print('Uw kluis is succesvol teruggenomen.')
-        else:
-            print('De ingevoerde combinatie is onjuist')
+        regel = regel.rstrip()
+        kluisregel = regel.split(';')
+        if kluisregel[0] == kluisnummer:
+            if wachtwoord == kluisregel[1]:
+                print('Uw kluis is succesvol teruggenomen.')
+            else:
+                print('De ingevoerde combinatie is onjuist')
+
     k = input("Press a key to exit")
 
 menu()
